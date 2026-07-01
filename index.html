@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UPDM</title>
-    <!-- Favicons (generados y guardados en /favicon) -->
-    <link rel="icon" href="favicon/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="favicon/favicon.ico">
-    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <title>InfiniGuard - Ingeniería de Superficies Contra la Corrosión</title>
+    <meta name="description" content="InfiniGuard ofrece protección y restauración de equipos HVAC y activos industriales mediante recubrimientos de ingeniería avanzada para detener la corrosión y optimizar la eficiencia.">
+    <link rel="icon" href="infiniguardlogotexto.png" type="image/png">
+    <link rel="shortcut icon" href="infiniguardlogotexto.png">
+    <link rel="apple-touch-icon" href="infiniguardlogotexto.png">
     <meta name="theme-color" content="#4ab7e2">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="estilos.css">
     <style>
         /* Centrar la sección del webform y darle contorno */
-        .pipedrive-section { min-height: 320px; }
-        .pipedrive-wrapper { max-width: 720px; width: 100%; border: 2px solid rgba(0,0,0,0.08); padding: 1rem; border-radius: 12px; background: #fff; }
-        @media (max-width: 576px) { .pipedrive-wrapper { padding: .75rem; } }
+        .pipedrive-section {
+            min-height: 320px;
+        }
+
+        .pipedrive-wrapper {
+            max-width: 720px;
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0.08);
+            padding: 1rem;
+            border-radius: 12px;
+            background: #fff;
+        }
+
+        @media (max-width: 576px) {
+            .pipedrive-wrapper {
+                padding: .75rem;
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="LOGOUPDM.png" alt="UPDM Logo" width="110" height="50" class="me-2 logo-updm">
+                <img src="infiniguardlogotexto.png" alt="InfiniGuard Logo" style="height: 45px; width: auto;"
+                    class="me-2 logo-infiniguard">
                 <span class="fw-bold text-success protecall-brand"></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
                     <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="index.html">Inicio</a></li>
-                     <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="protege.html">Protege</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="restaura.html">Restaura</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="optimiza.html">Optimiza</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="protege.html">Protege</a></li>
+
+
                     <li class="nav-item ms-2">
                         <a class="btn btn-primary fw-bold px-4" href="cotizacion.html">Cotizaciones</a>
                     </li>
@@ -44,138 +65,353 @@
     </nav>
     <!-- Fin Barra de navegación -->
 
-     <!-- https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80 --> 
+    <!-- https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80 -->
     <!-- Hero/Slider principal -->
- <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-    <div class="carousel-inner">
-        
-        <div class="carousel-item active">
-            <div class="position-relative hero-section">
-                <img src="inicio1.jpeg" alt="HVAC" class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
-                <div class="container position-relative z-2 py-5 hero-content">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
-                        <h1 class="display-2 fw-bold text-white text-center hero-title">PROTEGE</h1>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="position-relative hero-section">
+                    <img src="inicio1.jpeg" alt="HVAC" class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
+                    <div class="container position-relative z-2 py-5 hero-content">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
+                            <h1 class="display-4 fw-bold text-white text-center hero-title">Protegemos sus chillers.<br>Aseguramos su inversión.</h1>
                         <hr class="bg-white opacity-100 hero-hr">
-                        <p class="lead text-white text-center hero-lead">Reduce el impacto corrosivo del ambiente y evita problemas costosos a futuro.</p>
+                        <p class="lead text-white text-center hero-lead fs-4">Reducimos hasta <strong>70%</strong> los costos de reemplazo prematuro de equipos HVAC en ambientes corrosivos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="carousel-item">
-            <div class="position-relative hero-section">
-                <img src="foto2.png" alt="Paisaje Industrial" class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
-                <div class="container position-relative z-2 py-5 hero-content">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
-                        <h1 class="display-2 fw-bold text-white text-center hero-title">RESTAURA</h1>
+            <div class="carousel-item">
+                <div class="position-relative hero-section">
+                    <img src="foto2.png" alt="Paisaje Industrial"
+                        class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
+                    <div class="container position-relative z-2 py-5 hero-content">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
+                            <h1 class="display-4 fw-bold text-white text-center hero-title">Aplicación Certificada</h1>
                         <hr class="bg-white opacity-100 hero-hr">
-                        <p class="lead text-white text-center hero-lead">Devuelve la integridad y eficiencia a tus equipos con nuestros recubrimientos.</p>
+                        <p class="lead text-white text-center hero-lead fs-4">Garantía documentada y seguimiento continuo mediante reportes fotográficos.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="carousel-item">
-            <div class="position-relative hero-section">
-                <img src="foto3.png" alt="Infraestructura Moderna" class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
-                <div class="container position-relative z-2 py-5 hero-content">
-                    <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
-                        <h1 class="display-2 fw-bold text-white text-center hero-title">OPTIMIZA</h1>
+            <div class="carousel-item">
+                <div class="position-relative hero-section">
+                    <img src="foto3.png" alt="Infraestructura Moderna"
+                        class="w-100 h-100 position-absolute top-0 start-0 hero-bg-img">
+                    <div class="container position-relative z-2 py-5 hero-content">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100 hero-center">
+                            <h1 class="display-4 fw-bold text-white text-center hero-title">Modelo High Touch</h1>
                         <hr class="bg-white opacity-100 hero-hr">
-                        <p class="lead text-white text-center hero-lead">Mejora el rendimiento y la vida útil de tus activos industriales.</p>
+                        <p class="lead text-white text-center hero-lead fs-4">Consultoría especializada, mantenimiento preventivo e inspecciones continuas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-    </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <button class="carousel-control-prev z-3" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <button class="carousel-control-next z-3" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-</div>
+    </div>
 
-    <!-- Sección de ahorros -->
-    <div class="bg-celeste text-white py-3 ">
-        <div class="container">
-            <div class="row align-items-center text-center">
-
-                <div class="col-md-12">
-                    <div class="mb-3 savings-desc">
-                        <span class="fw-bold savings-desc-text text-center">
-                            Gracias a la implementación de soluciones de alto desempeño, nuestros clientes han logrado reducir significativamente su impacto ambiental y sus costos operativos. <br>
-                            Los recubrimientos y procesos aplicados cumplen con los más altos estándares de calidad, garantizando eficiencia y durabilidad en cada proyecto.
-                        </span>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <div class="fw-bold savings-title text-uppercase" style="font-size:1.1rem;">Nuestros clientes han ahorrado más de...</div>
-                            <div class="fw-bold savings-label savings-label-big" style="font-size:1.1rem;">Emisión de carbono evitada</div>
-                            <div class="display-5 fw-bold savings-value" style="color:#e6f0fa;">137,883,801 LBS+</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="fw-bold savings-label savings-label-big" style="font-size:1.1rem;">Ahorro en energía</div>
-                            <div class="display-5 fw-bold savings-value" style="color:#e6f0fa;">$10,341,285+</div>
+    <!-- Sección Antes y Después -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Mitad de Texto -->
+            <div class="col-lg-5 mb-5 mb-lg-0 pe-lg-4">
+                <h2 class="fw-bold text-dark text-uppercase mb-3">Resultados Comprobados</h2>
+                <hr class="bg-celeste" style="width: 80px; height: 4px; border: none; margin-bottom: 1.5rem; opacity: 1;">
+                <p class="lead text-muted mb-4">Evita problemas costosos comparando el desgaste prematuro con nuestra protección especializada. Los ambientes corrosivos destruyen los serpentines rápidamente; nuestros recubrimientos detienen la corrosión y extienden la vida útil de tus equipos.</p>
+                <a href="cotizacion.html" class="btn btn-primary btn-lg fw-bold px-4">Solicita tu diagnóstico</a>
+            </div>
+            
+            <!-- Mitad de Comparativa Visual -->
+            <div class="col-lg-7">
+                <div class="row gx-3 align-items-center">
+                    <div class="col-6 text-center">
+                        <h5 class="bg-danger text-white py-2 fw-bold rounded shadow-sm fs-6 mb-3">SIN PROTECCIÓN</h5>
+                        <div class="card border-0 shadow overflow-hidden rounded-3">
+                            <img src="serpentinoxidado.png" alt="Chiller sin protección" class="img-fluid" style="height:350px; object-fit:cover; width:100%; transform: scale(1.08);">
                         </div>
                     </div>
-                     </div>
+                    <div class="col-6 text-center">
+                        <h5 class="text-white py-2 fw-bold rounded shadow-sm fs-6 mb-3" style="background-color: #4ab7e2;">CON PROTECCIÓN</h5>
+                        <div class="card border-0 shadow overflow-hidden rounded-3">
+                            <img src="serpentinrecubierto.png" alt="Chiller con protección" class="img-fluid" style="height:350px; object-fit:cover; width:100%; transform: scale(1.08);">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--Fin seccion ahorros-->
+    <!-- Fin Sección Antes y Después -->
 
-    
+    <!-- Sección de Impacto y Ahorros -->
+    <div class="bg-celeste text-white py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-10 text-center">
+                    <p class="fs-4 fw-light lh-base mb-0">
+                        Gracias a la implementación de soluciones de alto desempeño, nuestros clientes han logrado reducir significativamente su impacto ambiental y sus costos operativos. <br><br>
+                        Los recubrimientos y procesos aplicados cumplen con los más altos estándares de calidad, garantizando eficiencia y durabilidad en cada proyecto.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mb-4">
+                <h3 class="fw-bold text-uppercase" style="letter-spacing: 1px;">El impacto de nuestra tecnología</h3>
+                <hr class="bg-white opacity-100" style="width: 80px; height: 3px; border: none; margin: 1rem auto;">
+            </div>
+
+            <div class="row text-center g-4 justify-content-center">
+                <div class="col-md-5">
+                    <div class="p-4 border border-2 border-white rounded-4 shadow-sm" style="background-color: rgba(255,255,255,0.1);">
+                        <div class="fs-5 fw-bold text-uppercase mb-2">Vida útil extendida</div>
+                        <div class="display-4 fw-bold text-white">5 a 10 <span class="fs-3">Años</span></div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="p-4 border border-2 border-white rounded-4 shadow-sm" style="background-color: rgba(255,255,255,0.1);">
+                        <div class="fs-5 fw-bold text-uppercase mb-2">Ahorro en reemplazos</div>
+                        <div class="display-4 fw-bold text-white">Hasta 70<span class="fs-3">%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Sección Ahorros -->
+
+
     <!-- ventajas  -->
     <div class="container my-5">
         <img src="ventajasycert.png" alt="Ventajas y Certificaciones" class="vyc">
     </div>
-        <!-- Fin de ventajas -->
+       <!-- Beneficios Clave y Diferenciadores -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Beneficios Clave y Diferenciadores</h2>
+                <hr class="bg-celeste" style="width: 80px; height: 4px; border: none; margin: 1rem auto; opacity: 1;">
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-7">
+                    <h4 class="fw-bold text-celeste mb-4" style="color: #4ab7e2;">¿Por qué elegir InfiniGuard?</h4>
+                    <ul class="list-unstyled fs-5 text-dark">
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i> 
+                            <span>Extiende la vida útil de chillers entre <strong>5 y 10 años</strong>.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i> 
+                            <span>Reduce drásticamente fallas inesperadas y paros de operación.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i> 
+                            <span>Genera un <strong>menor CAPEX</strong> al evitar el reemplazo prematuro de equipos.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i> 
+                            <span>Mejora significativamente la eficiencia energética.</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3"></i> 
+                            <span>Protección especializada para ambientes marinos y de alta corrosión.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <h4 class="fw-bold text-celeste mb-4" style="color: #4ab7e2;">Nuestros Diferenciadores</h4>
+                    <div class="row g-3 align-items-stretch">
+                        <div class="col-6">
+                            <div class="card h-100 border-0 shadow-sm text-center p-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2"><i class="bi bi-search" style="color:#4ab7e2;"></i></div>
+                                <h6 class="fw-bold mb-0">Diagnóstico técnico</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card h-100 border-0 shadow-sm text-center p-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2"><i class="bi bi-award-fill" style="color:#4ab7e2;"></i></div>
+                                <h6 class="fw-bold mb-0">Aplicación certificada</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card h-100 border-0 shadow-sm text-center p-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2"><i class="bi bi-shield-check" style="color:#4ab7e2;"></i></div>
+                                <h6 class="fw-bold mb-0">Garantía documentada</h6>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card h-100 border-0 shadow-sm text-center p-3 d-flex flex-column justify-content-center align-items-center">
+                                <div class="fs-1 mb-2"><i class="bi bi-laptop" style="color:#4ab7e2;"></i></div>
+                                <h6 class="fw-bold mb-0">Plataforma digital</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Beneficios -->
+    <!-- Nuestro Proceso (Experiencia del Cliente) -->
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">Nuestro Proceso</h2>
+            <p class="lead text-muted">Acompañamiento integral desde la evaluación hasta el seguimiento continuo.</p>
+            <hr class="bg-celeste" style="width: 80px; height: 4px; border: none; margin: 1rem auto; opacity: 1;">
+        </div>
+        <div class="row text-center g-4">
+            <div class="col-md col-sm-6">
+                <div class="p-3">
+                    <div class="fs-1 mb-3"><i class="bi bi-search text-secondary"></i></div>
+                    <h5 class="fw-bold">1. Diagnóstico Inicial</h5>
+                </div>
+            </div>
+            <div class="col-md-auto d-none d-md-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-right fs-3 text-muted"></i>
+            </div>
+            <div class="col-md col-sm-6">
+                <div class="p-3">
+                    <div class="fs-1 mb-3"><i class="bi bi-file-text text-secondary"></i></div>
+                    <h5 class="fw-bold">2. Propuesta Personalizada</h5>
+                </div>
+            </div>
+            <div class="col-md-auto d-none d-md-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-right fs-3 text-muted"></i>
+            </div>
+            <div class="col-md col-sm-4">
+                <div class="p-3">
+                    <div class="fs-1 mb-3"><i class="bi bi-check2-circle text-secondary"></i></div>
+                    <h5 class="fw-bold">3. Aplicación Certificada</h5>
+                </div>
+            </div>
+            <div class="col-md-auto d-none d-md-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-right fs-3 text-muted"></i>
+            </div>
+            <div class="col-md col-sm-4">
+                <div class="p-3">
+                    <div class="fs-1 mb-3"><i class="bi bi-graph-up-arrow text-secondary"></i></div>
+                    <h5 class="fw-bold">4. Seguimiento y Reportes</h5>
+                </div>
+            </div>
+            <div class="col-md-auto d-none d-md-flex align-items-center justify-content-center">
+                <i class="bi bi-arrow-right fs-3 text-muted"></i>
+            </div>
+            <div class="col-md col-sm-4">
+                <div class="p-3">
+                    <div class="fs-1 mb-3"><i class="bi bi-people text-secondary"></i></div>
+                    <h5 class="fw-bold">5. Valor y Confianza</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Nuestro Proceso -->
+
+    <!-- Sectores que Protegemos -->
+    <div class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Sectores que Protegemos</h2>
+                <p class="lead opacity-75">Soluciones diseñadas para industrias exigentes.</p>
+                <hr class="bg-celeste" style="width: 80px; height: 4px; border: none; margin: 1rem auto; opacity: 1;">
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 bg-transparent border-0 text-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Hoteles" class="img-fluid rounded-top" style="height: 200px; object-fit: cover;">
+                        <div class="p-3 border border-top-0 border-secondary rounded-bottom">
+                            <h5 class="fw-bold text-white mb-2">Hoteles y Resorts</h5>
+                            <p class="small opacity-75 mb-0">Cadenas costeras y hoteles independientes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 bg-transparent border-0 text-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Hospitales" class="img-fluid rounded-top" style="height: 200px; object-fit: cover;">
+                        <div class="p-3 border border-top-0 border-secondary rounded-bottom">
+                            <h5 class="fw-bold text-white mb-2">Hospitales Privados</h5>
+                            <p class="small opacity-75 mb-0">Máxima pureza de aire y control climático.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 bg-transparent border-0 text-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1562280963-8a547594084e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Centros Comerciales" class="img-fluid rounded-top" style="height: 200px; object-fit: cover;">
+                        <div class="p-3 border border-top-0 border-secondary rounded-bottom">
+                            <h5 class="fw-bold text-white mb-2">Centros Comerciales</h5>
+                            <p class="small opacity-75 mb-0">Sistemas HVAC de alta demanda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 bg-transparent border-0 text-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Plantas Industriales" class="img-fluid rounded-top" style="height: 200px; object-fit: cover;">
+                        <div class="p-3 border border-top-0 border-secondary rounded-bottom">
+                            <h5 class="fw-bold text-white mb-2">Plantas Industriales</h5>
+                            <p class="small opacity-75 mb-0">Ambientes altamente corrosivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Sectores -->
 
     <!-- Servicios Anticorrosivos -->
     <div class="container my-5">
         <div class="row gy-5">
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Protección Anticorrosiva</h3>
-                <p>Soluciones avanzadas para proteger equipos y superficies metálicas contra la corrosión, prolongando su vida útil y reduciendo costos de mantenimiento.</p>
+                <p>Soluciones avanzadas para proteger equipos y superficies metálicas contra la corrosión, prolongando
+                    su vida útil y reduciendo costos de mantenimiento.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Recubrimientos Especiales</h3>
-                <p>Aplicación de recubrimientos certificados que previenen la oxidación y el deterioro, ideales para ambientes industriales y condiciones extremas.</p>
+                <p>Aplicación de recubrimientos certificados que previenen la oxidación y el deterioro, ideales para
+                    ambientes industriales y condiciones extremas.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Mantenimiento Preventivo</h3>
-                <p>Programas de inspección y mantenimiento para asegurar la máxima protección anticorrosiva y el óptimo funcionamiento de tus instalaciones.</p>
+                <p>Programas de inspección y mantenimiento para asegurar la máxima protección anticorrosiva y el óptimo
+                    funcionamiento de tus instalaciones.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
         </div>
         <div class="row gy-5 mt-4">
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Soluciones a la Medida</h3>
-                <p>Desarrollamos estrategias personalizadas para cada proyecto, adaptándonos a las necesidades específicas de cada cliente y sector.</p>
+                <p>Desarrollamos estrategias personalizadas para cada proyecto, adaptándonos a las necesidades
+                    específicas de cada cliente y sector.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Ahorro Energético</h3>
-                <p>Recubrimientos que mejoran la eficiencia térmica y reducen el consumo energético en sistemas industriales y comerciales.</p>
+                <p>Recubrimientos que mejoran la eficiencia térmica y reducen el consumo energético en sistemas
+                    industriales y comerciales.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
             <div class="col-md-4 text-center">
                 <h3 class="fw-bold">Asesoría Técnica</h3>
-                <p>Contamos con expertos que te orientan en la selección, aplicación y mantenimiento de soluciones anticorrosivas de alta calidad.</p>
+                <p>Contamos con expertos que te orientan en la selección, aplicación y mantenimiento de soluciones
+                    anticorrosivas de alta calidad.</p>
                 <a href="#" class="text-primary fw-semibold">VER MÁS</a>
             </div>
         </div>
@@ -185,80 +421,28 @@
     <div class="container my-5">
         <img src="mantenimiento.png" alt="Ventajas y Certificaciones" class="vyc">
     </div>
-        <!-- Fin de mantenimiento -->
+    <!-- Fin de mantenimiento -->
 
-            <!-- Mapa de ubicación con texto útil a la izquierda y mapa a la derecha -->
-            <div class="container my-5">
-                <div class="row align-items-stretch shadow rounded-4 overflow-hidden mapa-bloque">
-                    <div class="col-md-6 p-4 d-flex flex-column justify-content-center bg-celeste text-white mapa-texto">
-                        <h4 class="fw-bold mb-3">Visítanos en Monterrey</h4>
-                        <ul class="list-unstyled mb-3">
-                            <li><strong>Dirección:</strong> Av. Cumbres Madeiras 1310, Real de Cumbres, Monterrey, N.L., México</li>
-                            <li><strong>Teléfono:</strong> (81) 1234-5678</li>
-                            <li><strong>Email:</strong> contacto@UPDM.com.mx</li>
-                            <li><strong>Horario:</strong> Lunes a Viernes, 9:00 a 18:00</li>
-                        </ul>
-                        <p class="mb-0">¡Estamos listos para ayudarte con soluciones anticorrosivas y recubrimientos certificados!</p>
-                    </div>
-                    <div class="col-md-6 p-0">
-                        <div class="ratio ratio-16x9 h-100">
-                            <iframe src="https://www.google.com/maps?q=Avenida+Cumbres+Madeiras+1310,+Real+de+Cumbres,+Monterrey,+Nuevo+León,+México&output=embed" title="Ubicación UPDM" allowfullscreen loading="lazy" style="border:0; width:100%; height:100%;"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Bloque con formulario (50%) a la izquierda y videos apilados (50%) a la derecha -->
-            <section class="pipedrive-section my-4">
-                <div class="container">
-                    <div class="row align-items-start">
-                        <!-- Formulario: ocupa 50% en desktop -->
-                        <div class="col-12 col-lg-6 order-1">
-                            <div class="pipedrive-wrapper company-form">
-                                <div class="form-header d-flex align-items-center">
-                                    <img src="LOGOUPDM.png" alt="UPDM" class="form-logo">
-                                    <div class="ms-3">
-                                        <h5 class="mb-0">Contacto UPDM</h5>
-                                        <small class="text-muted">Resolvemos tus consultas en 24 horas</small>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/c58yzsvq9RDkXBoHtfPjBbqkm0pHBFQu2psoGVDNqTqBlIJboEVpoLEpddILIGD1Iv"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
-                            </div>
-                        </div>
 
-                        <!-- Videos apilados: ocupan el otro 50% en desktop; en móvil se apilan debajo del formulario -->
-                        <div class="col-12 col-lg-6 order-2">
-                            <div class="videos-stack">
-                                <div class="ratio ratio-16x9 mb-3">
-                                    <iframe src="https://www.youtube.com/embed/McbjjlXv4_0" title="INFINIGUARD - Protección HVAC" allowfullscreen></iframe>
-                                </div>
-                                <div class="ratio ratio-16x9">
-                                    <iframe src="https://www.youtube.com/embed/ekLOWFsFAHI" title="INFINIGUARD - The Best Protection for HVAC" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-    <!-- (Sección de videos original removida; ahora los videos flanquean el formulario) -->
 
     <!-- Imagen final de confianza/elección: ocupar casi todo el ancho y sin sombras -->
     <div class="container-fluid my-4 px-0 final-image">
         <img src="noseligen.png" alt="Nos eligen" class="img-fluid d-block mx-auto" />
     </div>
 
-  
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
-            <p class="mb-1">&copy; 2025 UPDM. Todos los derechos reservados.</p>
-            <small>Contacto: contacto@UPDM.com.mx | Tel: (81) 1234-5678</small>
+            <p class="mb-1">&copy; 2025 InfiniGuard. Todos los derechos reservados.</p>
+            <small>Contacto: contacto@InfiniGuard.com.mx | Tel: (81) 1234-5678</small>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

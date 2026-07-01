@@ -144,11 +144,11 @@
     max-height: 80vh;
     object-fit: contain;
 }
-/* Logo UPDM más separado de la izquierda */
-.logo-updm {
+/* Logo InfiniGuard más separado de la izquierda */
+.logo-infiniguard {
     margin-left: 18px;
 }
-/* Marca UPDM (clase heredada conservada para compatibilidad) */
+/* Marca InfiniGuard (clase heredada conservada para compatibilidad) */
 .protecall-brand {
     font-size: 1.05rem;
 }
@@ -231,6 +231,11 @@ body {
 /* Personalizando el color de los enlaces de la barra de navegación */
 .navbar .nav-link {
     color:  #4ab7e2 !important; /* Cambia este color por el que prefieras */
+    font-size: 1.15rem;
+}
+
+.navbar .btn-primary {
+    font-size: 1.15rem;
 }
 
 /* Estilos para integrar el formulario con la identidad de la empresa */
@@ -268,7 +273,7 @@ body {
 
 /* Si quieres cambiar el color de acento de la empresa, edita la variable aquí */
 :root {
-    --updm-accent: #4ab7e2;
+    --infiniguard-accent: #4ab7e2;
 }
 
 /* Estilos específicos para cotización */
@@ -290,11 +295,11 @@ body {
 .cotizacion-hero .decor-sep{
     width: 120px;
     height: 6px;
-    background: linear-gradient(90deg,var(--updm-accent),#2aa0d1);
+    background: linear-gradient(90deg,var(--infiniguard-accent),#2aa0d1);
     border-radius: 6px;
 }
 
-.contact-card { border-left: 6px solid var(--updm-accent); border-radius: 12px; }
+.contact-card { border-left: 6px solid var(--infiniguard-accent); border-radius: 12px; }
 .contact-list li { padding: 0.5rem 0; display: flex; align-items: center; }
 .contact-list li i { font-size: 1.05rem; min-width: 28px; text-align: center; }
 .contact-card .map-card iframe { border-radius: 8px; }
