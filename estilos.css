@@ -368,3 +368,44 @@ body {
     }
 }
 
+/* Carrusel de clientes infinito */
+.clients-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-carousel-track {
+    display: inline-block;
+    width: max-content;
+    animation: scroll-clients 35s linear infinite;
+}
+
+.clients-carousel-track.track-reverse {
+    animation: scroll-clients-reverse 35s linear infinite;
+}
+
+.clients-carousel-track img {
+    height: 70px;
+    width: auto;
+    margin: 0 8px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    vertical-align: middle;
+}
+
+@keyframes scroll-clients {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-clients-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
